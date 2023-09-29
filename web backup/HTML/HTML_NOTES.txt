@@ -1,0 +1,193 @@
+web development 
+======================
+
+applications 
+==============
+web applications 
+mobile applications 
+desktop applications 
+ERP 
+clould applications 
+block chain applications 
+Artificial Intelligence applications 
+Gaming applications 
+Auto CAD 2D 3D applications .......
+
+web application ?
+============== an application which is running through 
+browser is called web application.
+web application is combination of web pages 
+web applications are running through internet 
+web applications communticating with servers & severs are 
+  communicating with databases 
+
+full stack web applications 
+===================
+fullstack = front end +back end 
+
+front end ( UI ) (user Interface) 
+======================= user can able to interact with 
+google.com 
+facebook.com 
+youtube.com
+  
+user actions :  (fb)
+ -> search 
+ ->create userid and password 
+ -> login 
+-> post 
+-> like 
+ -> share 
+-> comments 
+
+front technologies 
+===============
+HTML  : design a web page 
+CSS     :  decorations ,styles apply for html 
+Javascript  : make web page functional (req,res)
+
+jQuery ,Bootstrap -> imp libs on js 
+React/Angular/Vue JS  -> modren Javascript libs
+
+Servers side Technologies & DB (back end )
+=================================
+1.PHP +  DB   (back end)
+2.Java  + DB   (back end)
+3.Dotnet (Microsoft ) + DB  (back end)
+4.Python Django  + DB  (back end)
+5.Python Flask  + DB  (back end)
+6.Node JS + Express JS + DB  (back end)
+
+HTML 
+====== 
+HTML is Hyper Text Markup Language. 
+HTML used  for design web page 
+HTML files are saved with .html format 
+HTML is not programming language
+HTML is markup 
+HTML is collection of tags 
+Tags are componets for html web page 
+
+editors
+========
+what is editor : 
+editor is king of interface for write code and run 
+code & edit code 
+
+1.notepad 
+2.notepad++ 
+3.visual studio code  ---> 
+4.brackets 
+5.atom 
+6.sublime text 
+7.Visual studio 
+8.eclipse 
+
+visual studio code install process 
+=======================
+go to browser -> seach for visual studio code -> click on download
+and install 
+after install vs code -> install a plugin -> open in default browser 
+
+create a folder for html -> open folder in vscode 
+create a new file (file.html) 
+
+html tags and types 
+================
+1.paired tags  
+   <opentag>   content   </closetag)
+2.unpaired tags 
+   1.only open  <open tag> 
+   2.only close  </close tag>
+   3.self close   <self close /> 
+comments for html 
+================ comment is not executable 
+comments are using for understand flow of code
+<--   html code  -->  
+
+list items 
+=============
+1.ordered list 
+2.un ordered list 
+3.definition list 
+
+1.ordered list 
+============== 
+<ol>
+<li>Apple  </li>
+<li>Samsung </li>
+<li>LG</li>
+</ol>
+
+CSS 
+==== CSS is cascading style sheets 
+          CSS used for style ur web pages 
+          CSS is not programming 
+          CSS is syntax 
+CSS types 
+=======
+1.inline CSS : element specific  CSS
+2.internal CSS  : page specific  CSS
+3.external CSS : application specific CSS  
+
+inline css 
+=========  
+     <h1 style=' '    >  </h1>  
+    <h2 style=' ' >   </h2> 
+    <table  style = ' '  >   </table>
+
+style preference 
+===============
+     Q) if iam applying inline css,internal css which will load first in browser ?
+     A) inline 
+    
+     Q) if iam applying inline css,internal css and external CSS which will load first in browser ?
+     A) inline 
+
+     Q) if iam applying internal , external ? 
+      A)   external 
+    
+     Q) if iam applying external internal ? 
+      A) internal
+
+color  & background-color
+======================  
+name 
+rgb()
+hex value     # value   #000fff   
+ all 3 or 6 digits are combination of chars(a-z,A-Z) and numbers(0-9) 
+
+font-properties 
+=============
+font-family 
+font-style
+font-weight 
+font-size 
+
+text-properties 
+==============
+text-decoration 
+text-transform 
+text-align 
+text-indent 
+word-spacing 
+line-height 
+
+selectors 
+=============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

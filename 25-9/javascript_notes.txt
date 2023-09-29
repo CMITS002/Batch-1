@@ -1,0 +1,425 @@
+javascript 
+=========================
+->javascript is browser intrepreted ,scripting 
+programming language.
+-> javascript is object oriented.
+-> javascript is no-1 trending programming lang.
+-> javascript is global programming.
+-> javascript is browser independent.
+-> js is language independent.
+     java -> js + html +css
+     c# dotnet -> js 
+     PHP -> js 
+     Python Django -> js 
+     Python Flask -> js
+-> js is used for develop multiple kind apps 
+  ->web applications 
+     js,jQuery,React,Angular,VueJS,knockout
+  ->desktop applications
+  ->mobile applications 
+  ->artificial intellegence 
+  ->block chain application
+  ->IoT apps 
+  ->servere side developoment 
+     nodejs , express js ,next js   
+
+how to write js for web page 
+=============================
+1.inline  : element specific js.
+   events .
+2.internal : page specific js. 
+
+   <script type='javascript'>
+       script code ....
+   </script>
+
+3.external : application specific js.
+
+file.js
+============  script code ......
+
+file1.html 
+==============
+<script src='file.js'>  </script> 
+
+file2.html 
+==============
+<script src='file.js'>  </script> 
+
+4.browser console : console.
+
+5.online editors : search in browser.
+
+inline_js.html
+=================
+<body onload="alert('body loaded')">
+<button onclick=" var name='srinivas ' ;alert(name+' clciked on button') ">
+    click me 
+</button>
+</body>
+
+internal_js.html
+=========================
+
+<!-- internal js -->
+<script>
+alert('internal is loading')
+</script>
+
+<!-- internal CSS -->
+<style>
+ body { background-color: aquamarine;}
+</style>
+
+external_js.html
+===================
+<!-- external js -->
+<script src="file.js"> </script>
+
+file.js
+===============
+alert('external is loading')
+var f_name = prompt('enter ur first name')
+var l_name = prompt('enter  ur lastname')
+var full_name  = f_name +  ' ' + l_name
+document.write("ur full name is.." + full_name)
+
+browser_console.html
+=================================
+<h3> 
+    if you want open console window </br>
+    -> right click on browser</br>
+    -> inspect </br>
+    -> click on console </br>
+    -> write js code </br>
+</h3>
+
+alert()
+=============== for showing alerts (alert messages)
+alert('')
+alert(" ")
+
+console.log() 
+=================== for print console outputs in console window.
+console.log('')
+console.log(" ")
+
+document.write()
+==================== for print document(html) outputs .
+document.write('')
+document.write(" ")
+
+prompt()
+============ for show prompt messages , promt will take input from user.
+promt('')
+prompt("")
+
+note: promot() will take only string type data.
+
+pase Methods
+=============== string->int ===>  parseInt()
+
+what kind strings can convert string-int ? 
+
+   only numerical string 
+          '2'  '54'
+
+   'srini007' -> numerical charaterstic
+   'srini'    -> characterical string 
+   '234'      -> numerical string 
+
+JS_outputs.html
+==================
+<script>
+    alert('this is alert')
+    var name = prompt('enter ur name')
+    alert(name)
+
+    document.write('this is document output')
+    console.log('this is console output')
+    document.write("<h1> web development </h1>")
+
+</script>
+
+name_details.html
+======================
+<script>
+    var f_name=prompt('enter ur first name')
+    var l_name=prompt('enter ur lastname')
+    var full_name= f_name + ' ' + l_name
+
+    document.write('full name is ....'+ full_name)
+</script>
+
+calc.html
+=============
+
+<script>
+    var f_num=prompt("enter ur first number")
+    var s_num=prompt("enter ur second number")
+
+    var sum=parseInt(f_num)+parseInt(s_num) ;
+     document.write('summation is..'+sum);
+     document.write('</br>')
+
+     var sub=parseInt(f_num)-parseInt(s_num) ;
+     document.write('subtraction is..'+sub)
+     document.write('</br>')
+
+
+     var mul=parseInt(f_num)*parseInt(s_num) ;
+     document.write('multiplication is..'+mul)
+     document.write('</br>')
+
+
+     var div=parseInt(f_num)/parseInt(s_num) ;
+     document.write('divison is..'+div)
+     document.write('</br>')
+
+
+     var m_div=parseInt(f_num)%parseInt(s_num) ;
+     document.write('modulation value is..'+m_div)
+     document.write('</br>')
+
+
+     var oppenent=parseInt(f_num)**parseInt(s_num) ;
+     document.write('oppenent value is..'+oppenent)
+     document.write('</br>')
+
+
+    // '21' + '22' -> 2122
+    // parseInt('21') + parseInt('22') -> 43
+    // 21+22 ->43
+</script>
+
+DOM Arc
+==============
+
+Access Elements [h1,h1,h1,h1]
+Access Classes  [one,one,one,one]
+Access  id      red,green,blue
+
+note: last line is first execution in JS 
+
+innerHTML 
+=============== this is a js predefined method used for change inner text of the 
+element 
+
+add CSS from JS 
+================= .style.property='value'
+
+document.getElementById('idname').style.color='red'
+
+variables 
+================ varaible is the container for store values as datatypes 
+in js(ES5) variables can be defined with var keyword.
+in js (ES6) variables can be defined with let keyword.
+
+
+ex: var x=10
+    var y=20
+    var z=x+y 
+
+var x=10; var y=20; var z=x+y;alert(z)
+
+assignment 
+=============== create a addition,subtraction,mul,div,m_div,opponent..
+
+variable names rules 
+=========================
+varible name is custom defined .
+variable name should not start  with number 
+variable name should not have spaces 
+variable name should not have special chars 
+variable name allowed only one special char called _ underscore 
+varibale name is not a keyword or idedntifier 
+
+
+optional rule
+================  hello_world (gud) 
+                  helloWorld
+                  hello_World (gud)
+
+value 
+=================== when we want to capture value from textbox 
+
+js_show_outputs.html
+========================
+<script>
+    alert('this is alert')
+    var name = prompt('enter ur name')
+    alert(name)
+
+    document.write('this is document output')
+    console.log('this is console output')
+    document.write("<h1> web development </h1>")
+
+</script>
+
+name_details.html
+====================
+<script>
+    var f_name=prompt('enter ur first name')
+    var l_name=prompt('enter ur lastname')
+    var full_name= f_name + ' ' + l_name
+
+    document.write('full name is ....'+ full_name)
+</script>
+
+price_cal.html
+===============
+<script>
+    var prd_price=prompt('enter product price')
+    document.write('actual price ..' + prd_price);
+    document.write('</br>')
+
+    var prd_discount=prompt('enter discount in percentage')
+    document.write("discount in percentage.. " + prd_discount)
+    document.write('</br>')
+
+    var prd_discount_value=parseInt(prd_price)*parseInt(prd_discount)/100;
+    document.write('discounted value after calculation..' + prd_discount_value)
+    document.write('</br>')
+
+    var final_price=prd_price-prd_discount_value
+    document.write('final price after discount added..' + final_price)
+    document.write('</br>')
+</script>
+
+value_property.html
+====================
+<input type="text" placeholder="enter urname"/>    
+<h1></h1>
+<button onclick="get_()"> Get value from input and keep in h1 </button>
+
+
+<script>
+  function get_()
+  {
+    document.getElementsByTagName('h1')[0].innerHTML=document.getElementsByTagName('input')[0].value
+    document.getElementsByTagName('input')[0].value=''
+  }
+</script>
+
+value_read_dynamic.html
+==========================
+<input type="text" onkeyup="get_()" onblur="remove_()" placeholder="enter urname"/>    
+<h1></h1>
+
+
+<script>
+  function get_()
+  {
+    document.getElementsByTagName('h1')[0].innerHTML=document.getElementsByTagName('input')[0].value
+  }
+  function remove_()
+  {
+    document.getElementsByTagName('input')[0].value=''
+  }
+</script>
+
+ele_class_id.html
+===================
+<h1 class="green" id="one" style="color: orange;"> web development</h1>
+
+<script>
+    document.getElementById('one').style.color='blue'
+    document.getElementsByClassName('green')[0].style.color='yellow'
+
+    document.getElementsByTagName('h1')[0].style.color='red';
+
+</script>
+
+Access Classes
+==================
+<h2 class="red"> fullstack web React&Python</h2>
+<h2 class="red"> fullstack web React&Python</h2>
+<h2 class="green" style="background-color: bisque;"> fullstack web React&Python</h2>
+
+<script>
+document.getElementsByClassName('green')[0].style.backgroundColor='yellow'
+</script>
+
+<style>
+    h2 {background-color: aqua;}
+</style>
+
+Access id 
+============
+<h1 id="one"> web development  </h1>
+
+<script>
+    document.getElementById('one').innerHTML="fullstack web"
+</script>
+
+acces elements 
+=================
+<h1> web development</h1>
+<h1> web development</h1>
+<h1> web development</h1>
+<h1> web development</h1>
+
+<script>
+
+//access elements 
+document.getElementsByTagName('h1')[0].style.color='red';
+document.getElementsByTagName('h1')[1].style.color='blue'
+document.getElementsByTagName('h1')[2].style.color='green';
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

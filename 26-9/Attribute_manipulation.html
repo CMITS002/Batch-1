@@ -1,0 +1,41 @@
+<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quis sequi nisi eaque corrupti alias accusamus mollitia molestiae iure fugit laudantium reprehenderit eum, veniam consequatur repudiandae doloribus maiores tempora repellendus.</p>
+
+<button id="one"> Set Attribute</button>
+<button id="two">get Attribute</button>
+<button id="three">remove Attribute</button>
+<style>
+  .one 
+  {
+    color:blue;
+    font-style: italic;
+    background-color: bisque;
+  }
+</style>
+
+<script>
+
+    // set Attribute
+    document.getElementById('one').addEventListener('click',fun1)
+    function fun1()
+    {
+document.getElementsByTagName('p')[0].setAttribute('class','one')
+    }
+    //get Attribute
+    document.getElementById('two').addEventListener('click',fun2)
+    function fun2()
+    {
+alert(document.getElementsByTagName('p')[0].getAttribute('class'))
+    }
+
+    //remove attribute
+
+    document.getElementById('three').addEventListener('click',fun3)
+    function fun3()
+    {
+document.getElementsByTagName('p')[0].removeAttribute('class')
+    }
+
+
+
+</script>
+

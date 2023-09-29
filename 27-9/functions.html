@@ -1,0 +1,101 @@
+<script>
+    //1. normal function
+
+    // function showMyName()
+    // {
+    //     var name="srinivas g"
+    //     document.write('my name is...' + name)
+    // }
+
+    // function calling 
+
+    // showMyName()
+    // function addition()
+    // {
+    //  var x=10; var y=20; var z=x+y; alert(z)
+    // }
+    // addition()
+
+    //2. function with parameters 
+    // function emp_details(name,salary,designation)
+    // {
+    //     document.write(name); document.write('</br>')
+    //     document.write(salary); document.write('</br>')
+    //     document.write(designation);document.write('</br>')
+    // }
+    //calling function 
+//     emp_details('radha',105000,'Architect');
+//     document.write('</br>')
+//     emp_details('krishna',200000,'Manager');
+
+//     document.write('<hr>')
+
+//     function stu_details(name,age,marks)
+//     {
+//       document.write(name); document.write('</br>')
+//       document.write(age); document.write('</br>')
+//       document.write(marks); document.write('</br>')
+//     }
+// stu_details('vedavyas',12)
+//output 
+// vedavyas
+// 12
+// undefined
+
+// function stu_details(name,age)
+//     {
+//       document.write(name); document.write('</br>')
+//       document.write(age); document.write('</br>')
+//     }
+// stu_details('vedavyas',12,567)
+
+//3.function with return type
+
+// function getName()
+// {
+//    var name ='srini'
+//    return name
+// }
+// var my_name=getName()
+// document.write(my_name)     
+
+// function getName(name)
+// {
+//    return name
+// }
+// var my_name=getName('srini')
+// document.write(my_name)  
+
+
+// function getDetails(name,qual,sal)
+// {
+//    return [name,qual,sal]
+// }
+// var my_details=getDetails('srini','MCA',10000)
+// document.write(my_details);
+// document.write('</br>')
+
+// document.write(typeof(my_details))
+// document.write('</br>')
+
+// console.log(my_details);
+// document.write('Name is ..' + my_details[0]);
+
+//4.nested functions 
+function show_name(name)
+{
+    document.write(name)
+    document.write('</br>')
+}
+function show_qual(qual)
+{
+    document.write(qual)
+    document.write('</br>')
+}
+function show_name_qual()
+{
+    show_name('srinivas'); show_qual('MCA')
+}
+show_name_qual()
+
+</script>

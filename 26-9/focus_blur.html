@@ -1,0 +1,18 @@
+<input id="one" placeholder="enter ur name" type="text"/>
+
+<script>
+    //  focus event 
+    document.getElementById('one').addEventListener('focus',fcs)
+    function fcs()
+    {
+        document.getElementById('one').style.backgroundColor='lightgray'
+    }
+    // blur event 
+    document.getElementById('one').addEventListener('blur',blr)
+    function blr()
+    {
+        document.getElementById('one').style.backgroundColor=''
+    }
+
+    
+</script>

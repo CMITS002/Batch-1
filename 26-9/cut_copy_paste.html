@@ -1,0 +1,31 @@
+
+
+<input type="text" id="one" placeholder="enter ur name"/> 
+
+<script>
+    document.getElementById('one').addEventListener('cut',c)
+    function c()
+    {
+        
+        event.preventDefault()
+        alert('cut is not possible')
+    }
+
+    document.getElementById('one').addEventListener('copy',c1)
+    function c1()
+    {
+        
+        event.preventDefault()
+        alert('copy is not possible')
+    }
+
+    document.getElementById('one').addEventListener('paste',c2)
+    function c2()
+    {
+        
+        event.preventDefault()
+        alert('paste is not possible')
+    }
+
+
+</script>

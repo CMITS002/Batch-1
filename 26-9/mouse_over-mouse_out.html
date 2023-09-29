@@ -1,0 +1,22 @@
+<h1 id="one">web development</h1>
+
+<script>
+    // mouse over event 
+document.getElementById('one').addEventListener('mouseover',m_over)
+function m_over()
+{
+    document.getElementById('one').style.backgroundColor='lightgreen'
+    document.getElementById('one').innerHTML="fullstack web developmemt"
+    document.getElementById('one').style.textAlign='center'
+}
+
+// mouseout event
+document.getElementById('one').addEventListener('mouseout',m_out)
+function m_out()
+{
+    document.getElementById('one').style.backgroundColor=''
+    document.getElementById('one').innerHTML=" web developmemt"
+    document.getElementById('one').style.textAlign=''
+}
+
+</script>

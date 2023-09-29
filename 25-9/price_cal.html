@@ -1,0 +1,17 @@
+<script>
+    var prd_price=prompt('enter product price')
+    document.write('actual price ..' + prd_price);
+    document.write('</br>')
+
+    var prd_discount=prompt('enter discount in percentage')
+    document.write("discount in percentage.. " + prd_discount)
+    document.write('</br>')
+
+    var prd_discount_value=parseInt(prd_price)*parseInt(prd_discount)/100;
+    document.write('discounted value after calculation..' + prd_discount_value)
+    document.write('</br>')
+
+    var final_price=prd_price-prd_discount_value
+    document.write('final price after discount added..' + final_price)
+    document.write('</br>')
+</script>

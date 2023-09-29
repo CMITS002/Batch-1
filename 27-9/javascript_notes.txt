@@ -1,0 +1,1151 @@
+javascript 
+=========================
+->javascript is browser intrepreted ,scripting 
+programming language.
+-> javascript is object oriented.
+-> javascript is no-1 trending programming lang.
+-> javascript is global programming.
+-> javascript is browser independent.
+-> js is language independent.
+     java -> js + html +css
+     c# dotnet -> js 
+     PHP -> js 
+     Python Django -> js 
+     Python Flask -> js
+-> js is used for develop multiple kind apps 
+  ->web applications 
+     js,jQuery,React,Angular,VueJS,knockout
+  ->desktop applications
+  ->mobile applications 
+  ->artificial intellegence 
+  ->block chain application
+  ->IoT apps 
+  ->servere side developoment 
+     nodejs , express js ,next js   
+
+how to write js for web page 
+=============================
+1.inline  : element specific js.
+   events .
+2.internal : page specific js. 
+
+   <script type='javascript'>
+       script code ....
+   </script>
+
+3.external : application specific js.
+
+file.js
+============  script code ......
+
+file1.html 
+==============
+<script src='file.js'>  </script> 
+
+file2.html 
+==============
+<script src='file.js'>  </script> 
+
+4.browser console : console.
+
+5.online editors : search in browser.
+
+inline_js.html
+=================
+<body onload="alert('body loaded')">
+<button onclick=" var name='srinivas ' ;alert(name+' clciked on button') ">
+    click me 
+</button>
+</body>
+
+internal_js.html
+=========================
+
+<!-- internal js -->
+<script>
+alert('internal is loading')
+</script>
+
+<!-- internal CSS -->
+<style>
+ body { background-color: aquamarine;}
+</style>
+
+external_js.html
+===================
+<!-- external js -->
+<script src="file.js"> </script>
+
+file.js
+===============
+alert('external is loading')
+var f_name = prompt('enter ur first name')
+var l_name = prompt('enter  ur lastname')
+var full_name  = f_name +  ' ' + l_name
+document.write("ur full name is.." + full_name)
+
+browser_console.html
+=================================
+<h3> 
+    if you want open console window </br>
+    -> right click on browser</br>
+    -> inspect </br>
+    -> click on console </br>
+    -> write js code </br>
+</h3>
+
+alert()
+=============== for showing alerts (alert messages)
+alert('')
+alert(" ")
+
+console.log() 
+=================== for print console outputs in console window.
+console.log('')
+console.log(" ")
+
+document.write()
+==================== for print document(html) outputs .
+document.write('')
+document.write(" ")
+
+prompt()
+============ for show prompt messages , promt will take input from user.
+promt('')
+prompt("")
+
+note: promot() will take only string type data.
+
+pase Methods
+=============== string->int ===>  parseInt()
+
+what kind strings can convert string-int ? 
+
+   only numerical string 
+          '2'  '54'
+
+   'srini007' -> numerical charaterstic
+   'srini'    -> characterical string 
+   '234'      -> numerical string 
+
+JS_outputs.html
+==================
+<script>
+    alert('this is alert')
+    var name = prompt('enter ur name')
+    alert(name)
+
+    document.write('this is document output')
+    console.log('this is console output')
+    document.write("<h1> web development </h1>")
+
+</script>
+
+name_details.html
+======================
+<script>
+    var f_name=prompt('enter ur first name')
+    var l_name=prompt('enter ur lastname')
+    var full_name= f_name + ' ' + l_name
+
+    document.write('full name is ....'+ full_name)
+</script>
+
+calc.html
+=============
+
+<script>
+    var f_num=prompt("enter ur first number")
+    var s_num=prompt("enter ur second number")
+
+    var sum=parseInt(f_num)+parseInt(s_num) ;
+     document.write('summation is..'+sum);
+     document.write('</br>')
+
+     var sub=parseInt(f_num)-parseInt(s_num) ;
+     document.write('subtraction is..'+sub)
+     document.write('</br>')
+
+
+     var mul=parseInt(f_num)*parseInt(s_num) ;
+     document.write('multiplication is..'+mul)
+     document.write('</br>')
+
+
+     var div=parseInt(f_num)/parseInt(s_num) ;
+     document.write('divison is..'+div)
+     document.write('</br>')
+
+
+     var m_div=parseInt(f_num)%parseInt(s_num) ;
+     document.write('modulation value is..'+m_div)
+     document.write('</br>')
+
+
+     var oppenent=parseInt(f_num)**parseInt(s_num) ;
+     document.write('oppenent value is..'+oppenent)
+     document.write('</br>')
+
+
+    // '21' + '22' -> 2122
+    // parseInt('21') + parseInt('22') -> 43
+    // 21+22 ->43
+</script>
+
+DOM Arc
+==============
+
+Access Elements [h1,h1,h1,h1]
+Access Classes  [one,one,one,one]
+Access  id      red,green,blue
+
+note: last line is first execution in JS 
+
+innerHTML 
+=============== this is a js predefined method used for change inner text of the 
+element 
+
+add CSS from JS 
+================= .style.property='value'
+
+document.getElementById('idname').style.color='red'
+
+variables 
+================ varaible is the container for store values as datatypes 
+in js(ES5) variables can be defined with var keyword.
+in js (ES6) variables can be defined with let keyword.
+
+
+ex: var x=10
+    var y=20
+    var z=x+y 
+
+var x=10; var y=20; var z=x+y;alert(z)
+
+assignment 
+=============== create a addition,subtraction,mul,div,m_div,opponent..
+
+variable names rules 
+=========================
+varible name is custom defined .
+variable name should not start  with number 
+variable name should not have spaces 
+variable name should not have special chars 
+variable name allowed only one special char called _ underscore 
+varibale name is not a keyword or idedntifier 
+
+
+optional rule
+================  hello_world (gud) 
+                  helloWorld
+                  hello_World (gud)
+
+value 
+=================== when we want to capture value from textbox 
+
+js_show_outputs.html
+========================
+<script>
+    alert('this is alert')
+    var name = prompt('enter ur name')
+    alert(name)
+
+    document.write('this is document output')
+    console.log('this is console output')
+    document.write("<h1> web development </h1>")
+
+</script>
+
+name_details.html
+====================
+<script>
+    var f_name=prompt('enter ur first name')
+    var l_name=prompt('enter ur lastname')
+    var full_name= f_name + ' ' + l_name
+
+    document.write('full name is ....'+ full_name)
+</script>
+
+price_cal.html
+===============
+<script>
+    var prd_price=prompt('enter product price')
+    document.write('actual price ..' + prd_price);
+    document.write('</br>')
+
+    var prd_discount=prompt('enter discount in percentage')
+    document.write("discount in percentage.. " + prd_discount)
+    document.write('</br>')
+
+    var prd_discount_value=parseInt(prd_price)*parseInt(prd_discount)/100;
+    document.write('discounted value after calculation..' + prd_discount_value)
+    document.write('</br>')
+
+    var final_price=prd_price-prd_discount_value
+    document.write('final price after discount added..' + final_price)
+    document.write('</br>')
+</script>
+
+value_property.html
+====================
+<input type="text" placeholder="enter urname"/>    
+<h1></h1>
+<button onclick="get_()"> Get value from input and keep in h1 </button>
+
+
+<script>
+  function get_()
+  {
+    document.getElementsByTagName('h1')[0].innerHTML=document.getElementsByTagName('input')[0].value
+    document.getElementsByTagName('input')[0].value=''
+  }
+</script>
+
+value_read_dynamic.html
+==========================
+<input type="text" onkeyup="get_()" onblur="remove_()" placeholder="enter urname"/>    
+<h1></h1>
+
+
+<script>
+  function get_()
+  {
+    document.getElementsByTagName('h1')[0].innerHTML=document.getElementsByTagName('input')[0].value
+  }
+  function remove_()
+  {
+    document.getElementsByTagName('input')[0].value=''
+  }
+</script>
+
+ele_class_id.html
+===================
+<h1 class="green" id="one" style="color: orange;"> web development</h1>
+
+<script>
+    document.getElementById('one').style.color='blue'
+    document.getElementsByClassName('green')[0].style.color='yellow'
+
+    document.getElementsByTagName('h1')[0].style.color='red';
+
+</script>
+
+Access Classes
+==================
+<h2 class="red"> fullstack web React&Python</h2>
+<h2 class="red"> fullstack web React&Python</h2>
+<h2 class="green" style="background-color: bisque;"> fullstack web React&Python</h2>
+
+<script>
+document.getElementsByClassName('green')[0].style.backgroundColor='yellow'
+</script>
+
+<style>
+    h2 {background-color: aqua;}
+</style>
+
+Access id 
+============
+<h1 id="one"> web development  </h1>
+
+<script>
+    document.getElementById('one').innerHTML="fullstack web"
+</script>
+
+acces elements 
+=================
+<h1> web development</h1>
+<h1> web development</h1>
+<h1> web development</h1>
+<h1> web development</h1>
+
+<script>
+
+//access elements 
+document.getElementsByTagName('h1')[0].style.color='red';
+document.getElementsByTagName('h1')[1].style.color='blue'
+document.getElementsByTagName('h1')[2].style.color='green';
+</script>
+
+functions 
+============== function is set of statements which can able to 
+execcute a task.
+
+how to define functions in js 
+==============================
+functions are defined with function keyword 
+
+function fun_name ()
+{
+
+}
+
+fun_name is custom defined 
+
+fun_name have rules 
+======================
+function name should not start with number 
+function name do not have space 
+function name should not contain any special chars 
+function name allowed underscore as special char
+function name is not a js keyword or identifier 
+
+
+function ShowMyName()
+{
+   var name='srini'
+   alert(name)
+}
+
+when we define function we need to call it otherwise it will 
+not execute 
+
+function call 
+===============   showMyName()
+
+events 
+======== event is a function 
+
+events have some steps 
+========================
+1.element access by tagname,classname,id
+  document.getElementById('idname')
+
+2.we need to provide listerner
+   document.getElementById('idname').addEventListerner('click',fun1)
+3.listerner have two parameters
+   1. event name (predefined)
+   2. event handler (custom defined function name)
+
+4. we have to implement event handler.
+
+    function fun1()
+{  
+     alert('you clciked on button')
+}
+
+event from attribute
+=======================
+<button onclick='fun1()'>  click me  </button>
+
+<script>
+          function fun1() { alert('ok') }
+</script>
+
+how many events in javascript 
+===============================
+click 
+dblclick 
+mouseover 
+mouseout 
+mousemove 
+focus 
+blur 
+keyup 
+keydown 
+keypress
+change 
+contextmenu 
+cut 
+copy
+paste 
+
+click event 
+===============================
+<button>click me</button>
+
+<script>
+    // 1.access ur element
+    document.getElementsByTagName('button')[0].addEventListener('click',fun1)
+    function fun1()
+    {
+        alert('button clicked')
+document.getElementsByTagName('button')[0].style.backgroundColor='lightblue'  
+    }
+</script>
+
+dbl_click
+==========
+<button>double click me</button>
+<script>
+    // 1.access ur element
+    document.getElementsByTagName('button')[0].addEventListener('dblclick',fun1)
+    function fun1()
+    {
+// alert('button clicked')
+document.getElementsByTagName('button')[0].style.backgroundColor='lightblue'  
+    }
+</script>
+
+mouse_over-mouse_out.html
+==========================
+<h1 id="one">web development</h1>
+
+<img id="one" src="https://th.bing.com/th?id=OIP._IMAMI_GZSBlt8KS5i4Q3wHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
+
+<script>
+document.getElementById('one').addEventListener('mouseover',m_over)
+function m_over()
+{
+    document.getElementById('one').setAttribute('src','https://th.bing.com/th?id=OIP.EguiZr7OObJQj5xLytWf5wHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2')
+}
+
+document.getElementById('one').addEventListener('mouseout',m_out)
+function m_out()
+{
+    document.getElementById('one').setAttribute('src','https://th.bing.com/th?id=OIP._IMAMI_GZSBlt8KS5i4Q3wHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2')
+}
+</script>
+
+<script>
+    // mouse over event 
+document.getElementById('one').addEventListener('mouseover',m_over)
+function m_over()
+{
+    document.getElementById('one').style.backgroundColor='lightgreen'
+    document.getElementById('one').innerHTML="fullstack web developmemt"
+    document.getElementById('one').style.textAlign='center'
+}
+
+// mouseout event
+document.getElementById('one').addEventListener('mouseout',m_out)
+function m_out()
+{
+    document.getElementById('one').style.backgroundColor=''
+    document.getElementById('one').innerHTML=" web developmemt"
+    document.getElementById('one').style.textAlign=''
+}
+
+</script>
+
+note : focus event for inputs 
+       when we click inside textbox focus event will fire. 
+
+      blur event for inputs 
+      when we click outside of the textbox blur event will fire.
+
+focus_blur.html
+=================
+<input id="one" placeholder="enter ur name" type="text"/>
+
+<script>
+    //  focus event 
+    document.getElementById('one').addEventListener('focus',fcs)
+    function fcs()
+    {
+        document.getElementById('one').style.backgroundColor='lightgray'
+    }
+    // blur event 
+    document.getElementById('one').addEventListener('blur',blr)
+    function blr()
+    {
+        document.getElementById('one').style.backgroundColor=''
+    }
+</script>
+
+key_up.html
+=============
+<input type="text" placeholder="enter ur name" /> 
+<h1></h1>
+
+<script>
+document.getElementsByTagName('input')[0].addEventListener('keyup',k_up)
+function k_up()
+{
+    document.getElementsByTagName('h1')[0].innerHTML=document.getElementsByTagName('input')[0].value
+}
+</script>
+
+calc_events.html 
+===================
+<center>
+    <h1> simple caculator </h1>
+<form style=" width: 50%; padding: 10px; border-radius: 10px; background-color: lightgray;">
+<input type="text" placeholder="enter ur first number"/>
+</br>
+<input type="text" placeholder="enter ur second number"/>
+</br>
+<span id="add" >+</span>
+<span id="add" >-</span>
+<span id="add" >*</span>
+<span id="add" >/</span>
+</form>
+</center>
+
+<style>
+    input { margin: 7px;}
+    span {background-color: rgb(43, 76, 226); padding:5px 10px; margin: 5px; color: white;}
+</style>
+
+<script>
+    document.getElementById('add').addEventListener('click',add)
+    function add()
+    {
+        var f_num=document.getElementsByTagName('input')[0].value
+        var s_num=document.getElementsByTagName('input')[1].value
+        var add_value =parseInt(f_num)+parseInt(s_num)
+        alert('addition value is..' + add_value)
+    }
+</script>
+
+context_menu.html
+===================
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, porro minus. Explicabo quisquam perspiciatis sequi soluta, dignissimos in eaque ad hic necessitatibus dolorem iste fugiat alias quam natus deleniti magni!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur eius beatae nulla voluptatem mollitia perferendis sed, quasi dolor maxime? Sequi veniam quia ipsum accusantium, temporibus molestiae praesentium deleniti voluptas!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati accusantium, explicabo ab nobis quibusdam totam cumque. Tempore est ut deserunt laborum asperiores, error fugit aperiam ex officiis iure dolorum exercitationem.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum repudiandae ducimus sunt, fugiat illo quasi, illum rem aut debitis consectetur laboriosam? Molestiae culpa, laboriosam alias minus rem explicabo odit?
+</p>
+<style>
+    p { background-color: lightblue; color: black; font-style: italic; }
+</style>
+<script>
+    document.getElementsByTagName('p')[0].addEventListener('contextmenu',ctx)
+    function ctx()
+    {
+        event.preventDefault()
+    }
+</script>
+
+
+attribute ,set,get,remove
+===========================
+
+set :  setAttribute('src','1.jpg')
+
+get : getAttribute('src')
+
+remove : removeAttribute('src')
+
+cut-copy-paste.html
+=======================
+
+
+<input type="text" id="one" placeholder="enter ur name"/> 
+
+<script>
+    document.getElementById('one').addEventListener('cut',c)
+    function c()
+    {
+        
+        event.preventDefault()
+        alert('cut is not possible')
+    }
+    document.getElementById('one').addEventListener('copy',c1)
+    function c1()
+    {
+        event.preventDefault()
+        alert('copy is not possible')
+    }
+    document.getElementById('one').addEventListener('paste',c2)
+    function c2()
+    {   
+        event.preventDefault()
+        alert('paste is not possible')
+    }
+</script>
+
+attribute_manipulation.html
+============================
+<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quis sequi nisi eaque corrupti alias accusamus mollitia molestiae iure fugit laudantium reprehenderit eum, veniam consequatur repudiandae doloribus maiores tempora repellendus.</p>
+
+<button id="one"> Set Attribute</button>
+<button id="two">get Attribute</button>
+<button id="three">remove Attribute</button>
+<style>
+  .one 
+  {
+    color:blue;
+    font-style: italic;
+    background-color: bisque;
+  }
+</style>
+
+<script>
+
+    // set Attribute
+    document.getElementById('one').addEventListener('click',fun1)
+    function fun1()
+    {
+document.getElementsByTagName('p')[0].setAttribute('class','one')
+    }
+    //get Attribute
+    document.getElementById('two').addEventListener('click',fun2)
+    function fun2()
+    {
+alert(document.getElementsByTagName('p')[0].getAttribute('class'))
+    }
+
+    //remove attribute
+
+    document.getElementById('three').addEventListener('click',fun3)
+    function fun3()
+    {
+document.getElementsByTagName('p')[0].removeAttribute('class')
+    }
+</script>
+
+variables.html
+======================
+
+<script>
+    var a=10;
+    document.write(typeof(a) + ' ' + a)
+    document.write("</br>")
+
+    var b=10.67;
+    document.write(typeof(b) + ' ' + b)
+    document.write("</br>")
+
+    var c='srini';
+    document.write(typeof(c) + ' ' + c)
+    document.write("</br>")
+
+    var d="srini";
+    document.write(typeof(d) + ' ' + d)
+    document.write("</br>")
+
+    var e=true;
+    document.write(typeof(e) + ' ' + e)
+    document.write("</br>")
+
+    var f
+    document.write(typeof(f) + ' ' + f)
+    document.write("</br>")
+
+    var g=null;
+    document.write(typeof(g) + ' ' + g)
+    document.write("</br>")
+
+    var h=['apple','lg','samsung','lenevo'];
+    document.write(typeof(h) + ' ' + h)
+    document.write("</br>")
+
+    var i = h[2]
+    document.write(typeof(i) + ' ' + i)
+    document.write("</br>")
+
+    var j={'name':'srini','qual':'mca','location':'hyd'}
+    document.write(typeof(j) + ' ' + j)
+    document.write("</br>")
+
+    var k = j.location
+    document.write(typeof(k) + ' ' + k)
+    document.write("</br>")
+
+functions & types
+=================
+1. normal function 
+2. function with parameters
+3. nested functions 
+4. function with return type 
+
+operators 
+=============
+arthematic 
+logical 
+inc/dec
+assignment 
+comparison 
+relational 
+
+operator : operator is a symbol which can perform 
+some operation between two or more operands 
+
+operand : it's a value 
+
+operator.html
+===============
+<script>
+    // arthematic operators
+    document.write('arthematic operators'); 
+    document.write('</br>')
+    document.write('<hr>');
+    document.write(10+20); document.write('</br>')
+    document.write(10-20);document.write('</br>')
+    document.write(10*20);document.write('</br>')
+    document.write(10/20);document.write('</br>')
+    document.write(10%20);document.write('</br>')
+    document.write(10**20);document.write('</br>')
+    document.write('<hr>');
+    // logical operators 
+    //  && : logic and 
+    //       t && t   -> t 
+    //       t && f   -> f
+    //       f && t   -> f
+    //       f && f   -> f 
+    //  || : logic or 
+    //       t || t -> t 
+    //       t || f -> t 
+    //       f || t -> t
+    //       f || f -> f 
+
+    //  != : logic not
+    //   t != f 
+    //   f != t 
+    document.write('logical operators'); 
+    document.write('</br>')
+    document.write('<hr>');
+
+    document.write(2<3 && 4>5); document.write('</br>')
+    document.write(1<3 && 4<5); document.write('</br>')
+
+    document.write(34>56 || 45>34); document.write('</br>')
+
+    document.write(2 != 56); document.write('</br>')
+
+    document.write('<hr>')
+
+    // comparison operators 
+    //   < , > ,<= , >= , == ,=== 
+    document.write('comarison operators'); 
+    document.write('</br>')
+    document.write('<hr>')
+
+    document.write(2<3) ; document.write('</br>')
+    document.write(35>78) ; document.write('</br>')
+    document.write(2<=3) ; document.write('</br>')
+    document.write(25>=35) ; document.write('</br>')
+    document.write(2=='2')  ; document.write('</br>')
+    document.write(2==='2') ; document.write('</br>')
+
+    document.write('<hr>')
+
+    //assinment operator 
+   // right value always stores in left value
+    //  = 
+
+    var x=23
+    var name ='Srinivas'
+
+    // inc /dec operator 
+    // ++ -- 
+
+    // concatation  operator 
+    // + works as conctnation operator 
+    // + in case of number act as arthematic operator 
+
+    // + in case of string act as concatnation operator ,
+    // any one of operand should be string here     
+
+    var f_name = 'srini'
+    var l_name ='gorantla'
+    var full_name = f_name + ' ' + l_name
+    document.write(full_name)
+
+</script>
+
+functions 
+=============== function is a event which is some set of statements.
+
+1. normal function 
+2. function with paramerters 
+3. nested functions 
+4. function with return type 
+
+functions are defined with function keyword 
+
+syn 1. normal function
+========================
+    function fun_name()
+   {
+     statement-1 
+     statement-2 
+     ................
+   } 
+fun_name,parametername rules 
+=============================
+1. fun name should not start with numbers 
+2. fun name should not have space 
+3. fun name should not have any special chars 
+4. fun name can have underscore _ and $
+5. fun name is not js keyword or identifier .
+
+note : without function call function will not execute. 
+
+calling function :  fun_name()
+
+2.syn function with parametes 
+==============================
+
+functions.html
+==================
+<script>
+    //1. normal function
+
+    // function showMyName()
+    // {
+    //     var name="srinivas g"
+    //     document.write('my name is...' + name)
+    // }
+
+    // function calling 
+
+    // showMyName()
+    // function addition()
+    // {
+    //  var x=10; var y=20; var z=x+y; alert(z)
+    // }
+    // addition()
+
+    //2. function with parameters 
+    // function emp_details(name,salary,designation)
+    // {
+    //     document.write(name); document.write('</br>')
+    //     document.write(salary); document.write('</br>')
+    //     document.write(designation);document.write('</br>')
+    // }
+    //calling function 
+//     emp_details('radha',105000,'Architect');
+//     document.write('</br>')
+//     emp_details('krishna',200000,'Manager');
+
+//     document.write('<hr>')
+
+//     function stu_details(name,age,marks)
+//     {
+//       document.write(name); document.write('</br>')
+//       document.write(age); document.write('</br>')
+//       document.write(marks); document.write('</br>')
+//     }
+// stu_details('vedavyas',12)
+//output 
+// vedavyas
+// 12
+// undefined
+
+// function stu_details(name,age)
+//     {
+//       document.write(name); document.write('</br>')
+//       document.write(age); document.write('</br>')
+//     }
+// stu_details('vedavyas',12,567)
+
+//3.function with return type
+
+// function getName()
+// {
+//    var name ='srini'
+//    return name
+// }
+// var my_name=getName()
+// document.write(my_name)     
+
+// function getName(name)
+// {
+//    return name
+// }
+// var my_name=getName('srini')
+// document.write(my_name)  
+
+
+// function getDetails(name,qual,sal)
+// {
+//    return [name,qual,sal]
+// }
+// var my_details=getDetails('srini','MCA',10000)
+// document.write(my_details);
+// document.write('</br>')
+
+// document.write(typeof(my_details))
+// document.write('</br>')
+
+// console.log(my_details);
+// document.write('Name is ..' + my_details[0]);
+
+//4.nested functions 
+function show_name(name)
+{
+    document.write(name)
+    document.write('</br>')
+}
+function show_qual(qual)
+{
+    document.write(qual)
+    document.write('</br>')
+}
+function show_name_qual()
+{
+    show_name('srinivas'); show_qual('MCA')
+}
+show_name_qual()
+
+</script>
+
+
+
+
+function  fun_name(a,b,c)
+{
+   a -> v
+   b -> v
+   c -> v
+}
+
+fun_name(a-v,b-v,c-v)
+
+conditions
+================= check condition wheater it is true or false 
+1.if  : if checks only true statements 
+2.if else : if else checks true and false statements too 
+3.else if  : cheking multiple conditions for true then it will go for false 
+4.nested if : if inside if 
+5.switch : cheking multiple conditions for true then it will go for false
+
+conditions.html
+=================
+<script>
+
+    // 1. if
+
+    // var name="sreenivas"
+    // if (name=="Sreenivas")
+    // {
+    //     alert('ok')
+    // }
+
+    //2. if else 
+
+    // var name="sreenivas"
+
+    // if (name=="Sreenivas")
+    // {
+    //     alert('matched')
+    // }
+    // else{
+    //     alert('not matched')
+    // }
+
+    // 3.else if 
+
+    // var speed=56
+    // if (speed<30)
+    // {
+    //     alert('low speed')
+    // }
+    // else if (speed>30 &&  speed<60)
+    // {
+    //     alert('avg speed')
+    // }
+    // else if (speed>60 && speed<100)
+    // {
+    //     alert('good speed')
+    // }
+    // else
+    // {
+    //     alert('high speed dangrous')
+    // }
+// 4.nested if 
+
+var qualifed=true 
+var gotJob=false 
+
+if (qualifed==true)
+{
+  alert('qualification done')
+  if(gotJob==true)
+  {
+    alert('congratulations')
+  }
+  else{
+    alert('dont worry try again u be succeed')
+  }
+}
+else
+{
+  alert('not qualified still struggle in study')
+}
+
+</script>
+
+loops 
+========= 
+while 
+do while 
+for loop 
+for in 
+for each 
+for of 
+nested for 
+
+loop process 
+================
+1. initilize value 
+2. check condition 
+3. if condition true execute block of code 
+4. inc/dec 
+5. if condition is false terminate the loop
+
+note;
+======
+length calculated from 1 
+index  calculated from 0
+
+loops.html
+============
+<script>
+    // while loop 
+
+    // var i=0
+    // while(i<10)
+    // {
+    //     document.write(i); document.write('</br>')
+    //     i++
+    // }
+
+    // do while 
+
+// var i=0
+// do 
+// {
+//     document.write(i); document.write('</br>')
+//     i++
+// }while(i<10);
+
+// for loop
+
+// for (var i=0;i<10;i++)
+// {
+//     document.write(i); document.write('</br>')
+// }
+
+// var devices=['apple','nokia','LG','Samsung','Asus']
+// //alert(devices.length)
+//  for (var device=0; device<devices.length;device++)
+//  {
+//     document.write(devices[device]); document.write('</br>')
+//  }
+
+var devices=['apple','nokia','LG','Samsung','Asus']
+
+for (device in devices)
+{
+    document.write(devices[device]); document.write('</br>')
+}    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

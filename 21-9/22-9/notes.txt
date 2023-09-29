@@ -1,0 +1,702 @@
+fullstack web development 
+===============================
+1. front end 
+=========================
+ html 
+ css 
+ javascript 
+ jQuery 
+ bootstrap 
+ 
+ React / Angular / Vue JS 
+
+2. back end 
+================================
+PHP + mysql / mongodb 
+java + oracle 
+Dotnet + Sql server 
+Python Django /Flask + mongodb /mysql 
+Node JS + mongodb 
+Ruby + mysql 
+
+editors
+==============
+notepad 
+notepad++
+vscode (visual studio code)--> trending
+visual studio
+eclipse 
+atom 
+sublimetext 
+brackets 
+............. free and open soure 
+
+install vs code 
+=====================
+1. open browser -> search for vscode 
+
+</br>
+======= break the line 
+
+html tag : root level tag for create a page 
+head tag : head section for html page 
+body tag : body section for html page 
+
+kind of tags 
+=============
+1.paired tags 
+==============
+<open tag>    </close tag>
+
+
+2.unpaired tags
+======================
+1. only open <open tag>
+2. only close </close tag>
+3. self close <self close/> 
+
+headings 
+================
+h1...h6 
+h1 is bigger 
+h6 is smaller 
+
+paragraph 
+============ p tag  to show plain text 
+
+text formating tags 
+============================
+b tag : bold text 
+u tag : underline 
+i tag : italic 
+sub tag : subscription 
+sup tag : super scription 
+em tag : emphesised text 
+del tag : deleted text 
+pre tag : preface format 
+
+hyperlinks 
+============ hyperlinks creates with a tag or anchor 
+tag.
+
+<a href='' >  link name </a> 
+hyperlinks by default blue and underline style .
+hyperlinks referes to another web page of file.
+href is a mandatory attribute for a tag.
+
+note : when we want to open webpage in another 
+tab we have to add attriute called 
+target ='_blank'
+
+list items 
+==============
+1.ordered list 
+   <ol>   <li>  </li>  <li>  </li>    </ol>
+2.un ordered list 
+   <ul>   <li>  </li>  <li>  </li>    </ul>
+3.definition list 
+
+   <dl>  
+          <dt>   </dt> 
+          <dd>   </dd> 
+   </dl>
+images 
+============
+<img src ='' /> 
+img tag is inline tag 
+
+loading images 
+================
+loading from same folder 
+loading from images folder 
+htmls and images are in diff diff folders 
+loading from url 
+
+
+iframes 
+============
+ innerframes 
+
+<iframe src=''> 
+
+</iframe>
+
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illum veritatis explicabo pariatur, ea non possimus obcaecati dolorem expedita quaerat dolore laboriosam excepturi molestiae eveniet quo aut optio vitae quisquam?
+</p>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illum veritatis explicabo pariatur, ea non possimus obcaecati dolorem expedita quaerat dolore laboriosam excepturi molestiae eveniet quo aut optio vitae quisquam?
+</p>
+
+<div>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illum veritatis explicabo pariatur, ea non possimus obcaecati dolorem expedita quaerat dolore laboriosam excepturi molestiae eveniet quo aut optio vitae quisquam?
+</p>
+</div>
+
+<style>
+    div { background-color: brown; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    p { font-family:initial;
+        /* font-size: 50; */
+        /* font-weight: none; */
+        /* font-style: italic; */
+        /* none , italic , oblique,initial ,inherit  */
+        /* initial : browser default style 
+        inherit : inheriting from super element  */
+    }
+</style>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et distinctio explicabo optio nesciunt, alias voluptatum modi incidunt sequi non debitis deleniti quo. Architecto sequi dolorum, alias magnam nam dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores esse, dignissimos nesciunt, fugiat at earum exercitationem odit perspiciatis maiores iste iure ad quidem numquam nobis illo. Temporibus obcaecati ab odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quam mollitia architecto error beatae quod consequuntur vero quisquam ipsam magnam molestiae vitae, repudiandae provident animi asperiores omnis fugit illum? Illum?</p>
+
+
+<style>
+    p { 
+
+        text-align: justify;
+        /* left : defualt 
+        right 
+        center 
+        justify 
+        initial
+        inherit */
+
+        /* text-decoration: line-through; */
+        /* underline 
+        overline 
+        line-through 
+        initial 
+        inherit  */
+
+        text-transform: capitalize;
+        /* uppercase
+        lowercase 
+        captilize 
+        initial 
+        inherit  */
+
+        text-indent: 20px;
+
+        /* line-height: 50px; */
+       /* word-spacing: 50px; */
+
+
+    }
+</style>
+
+
+<p class="red" id="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis molestiae iste fugit rem, eum quasi repellat eaque. Nulla ullam, temporibus eaque officia tempore ut odit nisi ad, corporis consequatur obcaecati?</p>
+
+
+<style>
+p { color: blue;}
+.red { color:green}
+#red { color: orange;}
+
+</style>
+
+
+
+<center>
+<h2> sign up form </h2>
+
+<form>
+    <fieldset>
+        <legend> user name details </legend>
+        <input type="text" placeholder="enter first name" required/></br>
+        <input type="text" placeholder="enter last name" required/></br>
+        <input type="text" placeholder="enter user name" required/></br>
+        <input type="text" placeholder="re enter user name" required/></br>
+        <input type="password" placeholder="enter ur password" required/> </br>
+        <input type="password" placeholder="re enter password" required/> 
+    </fieldset>
+
+    <fieldset>
+        <legend>contact details</legend>
+        <input type="email" placeholder="enter ur email id" required/>
+        <input type="tel" placeholder=" enter ur phone number" required/>
+    </fieldset>
+    <fieldset>
+        <legend>select gender</legend>
+        Male : <input type="radio" name="gender" value="male"/>
+        FeMale : <input type="radio" name="gender" value="female"/>
+        others : <input type="radio" name="gender" value="others"/>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            select ur course
+        </legend>
+
+        Data Science : <input type="checkbox" value="ds"/>
+        IoT : <input type="checkbox" value="iot"/>
+        Block Chain : <input type="checkbox" value="bc"/>
+        AI  : <input type="checkbox" value="ai"/>
+        Full Stack : <input type="checkbox" value="fs"/>
+
+    </fieldset>
+    <fieldset>
+        <legend>
+            sign up here
+        </legend>
+        <input type="submit" value="sign up here"/>
+        <input type="reset" value="reset"/>
+        <input type="file" value="select"/> 
+    </fieldset>
+</form>
+</center>
+
+
+<center>
+<input type="text" placeholder="enter ur name" required /></br>
+
+<input type="password" placeholder="enter ur password" required /></br>
+</br>
+
+<input type="submit" value="sign in" />
+</center>
+
+
+<h1>web development</h1>
+<h2> fullstack </h2>
+<h3>block chain</h3>
+
+<!-- internal css -->
+<style>
+h1,h2,h3{color:red;}
+</style>
+
+
+  <!-- element specific css  -->
+
+  <h1 style="color: rgb(138, 34, 34);"> web development </h1>
+
+  <h2 style="color: green;"> full stack </h2>
+
+  <h3 style="color: blue;"> artificial intelligence</h3>
+
+
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident in, earum cumque quis consequatur veritatis? Animi quo, assumenda possimus, in fugit vero eaque, inventore minus velit quis voluptatum perspiciatis at!</p>
+
+<style>
+    p { color: #ffffff; background-color: rgb(255,100, 0);  }
+</style>
+
+
+
+<h1>web development</h1>
+<h2> fullstack </h2>
+<h3>block chain</h3>
+
+<link rel="stylesheet" href="file.css"/>
+
+
+
+h1,h2,h3{
+    color:red;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+
+static position program
+
+<p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus vero eaque officia ab. Architecto ex id, veritatis consectetur numquam doloribus impedit enim alias sint dolore, eaque, aliquam quam. Asperiores?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur non voluptatibus, veritatis suscipit omnis nam dolorem assumenda. Natus quasi recusandae rem labore quisquam quos praesentium consectetur reiciendis facilis! Error, exercitationem.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi asperiores veritatis ipsa consectetur perferendis eos consequatur reiciendis? Voluptas in aut, facere eaque quod quam necessitatibus modi expedita sapiente minus?</p>
+
+
+<style>
+    p{ background-color: lightblue; font-style: italic;}
+    .one {left: 50px;}
+</style>
+
+
+selectors
+
+<h1 class="one"> web development</h1>
+<h1> web development</h1>
+<h1 class="one" id="apple"> web development</h1>
+<h1> web development</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ex non neque cumque aliquid nemo quis. Minus, nostrum modi. Veniam fugit quaerat ad ipsam repellendus accusamus numquam nihil laborum quibusdam!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio possimus dignissimos deserunt culpa illum quae vel nemo, ipsa quis odit assumenda est quisquam inventore dicta adipisci laudantium commodi praesentium autem.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ratione vitae obcaecati eum eligendi tempore. Possimus doloremque ducimus blanditiis repudiandae ad? Fugiat perspiciatis est rerum architecto officiis quos, cum incidunt.</p>
+
+
+
+
+<style>
+
+       /* id selector  */
+       /* #apple { color :green;}  */
+    /* element selector  */
+    /* h1 {color: red;} */
+    /* class selector */
+    /* .one {color: blue;} */
+
+    /* group selector  */
+    h1,h2,h3{color:orange;}
+
+    /* universal selector  */
+    /* *{border :2px solid red;} */
+
+    /* adj one sibling selector  */
+    /* h1+p { background-color: lightblue;} */
+
+    /* adj all sibling selector  */
+    /* h1 ~p {background-color: orange;} */
+    
+    /* even selector  */
+    /* p:nth-child(even) { background-color: orange;}
+    p:nth-child(2n) {background-color: orange;} */
+
+    /* odd selector  */
+    /* p:nth-child(odd){ background-color: green;}
+    p:nth-child(2n+1) {background-color: green;} */
+
+    /* nth child selector  */
+    p:nth-child(2) {background-color: red;}
+
+    
+ 
+</style>
+
+positions 
+
+<div class="one">
+    one
+</div>
+
+<div class="two">
+    two
+</div>
+<div class="three">
+    three
+</div>
+
+<style>
+    div { width : 100px; height: 100px; position: absolute;}
+    .one {background-color: red; left: 10px; top:10px;}
+    .two{ background-color: blue; left:50px; top:50px;}
+    .three { background-color: green;left:100px; top:100px;}
+</style>
+
+box-model
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorem non et dolores aspernatur commodi eaque, rem perspiciatis nostrum quia quasi ipsa sit id animi magnam omnis aliquam quas alias!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorem non et dolores aspernatur commodi eaque, rem perspiciatis nostrum quia quasi ipsa sit id animi magnam omnis aliquam quas alias!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorem non et dolores aspernatur commodi eaque, rem perspiciatis nostrum quia quasi ipsa sit id animi magnam omnis aliquam quas alias!</p>
+
+<style>
+    p{
+        /* width: 100%; */
+        background-color: blue;
+        color: white;
+        font-style: italic;
+        height: auto;
+        padding: 30px;
+        /* t-r-b-l */
+        padding: 10px 50px;
+        /* t-b ,r-l */
+        padding: 10px 50px 150px;
+        /* t , r-l ,b  */
+        padding: 10px 20px 40px 80px;
+        /* t , r , b ,l  */
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 80px;
+        padding: 10px;
+
+        margin:50px ;
+        /* t-r-b-l */
+        margin:10px 50px;
+        /* t-b ,r-l */
+        margin: 10px 50px 150px;
+        /* t, r-l, b  */
+
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+
+        border:5px dotted red;
+        /* border-width , border-style , border-color  */
+
+        border-width: 10px 50px;
+        border-style: solid dotted;
+        border-color:red blue;
+
+        outline:10px solid pink;
+        
+        
+
+
+
+    }
+</style>
+
+fixed model
+
+<h1> web development </h1>
+</br>
+</br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum. Illo neque, autem quae velit quisquam aspernatur quibusdam hic! Nam quod minus, voluptatum fugit illum doloremque eius corporis maiores necessitatibus.</p>
+
+
+<style>
+h1 {
+    position: fixed;
+    left:0px;
+    top:0px;
+    margin: 0PX;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+</style>
+
+parent selectors
+
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magni perspiciatis dolores voluptas. Facere et perferendis veniam, earum reiciendis pariatur dolor perspiciatis, laboriosam repellat doloribus maxime quam, nemo cumque placeat?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates suscipit deleniti consequatur rem blanditiis, at tenetur laboriosam cum atque eveniet facilis esse aspernatur praesentium modi officiis, quas, fugit qui. Quis?</p>
+
+</div>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam repellat tempora ipsam quia omnis cum quam perferendis pariatur deleniti, provident saepe fuga minus quidem. Ut accusamus voluptatum illo culpa?</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam pariatur enim minima quis odit quo ex amet! Explicabo nisi illum accusantium, facere est nesciunt ipsam facilis cupiditate distinctio eaque iusto?</p>
+
+
+<style>
+    div p { background-color: blue;
+       color:white;
+       font-style: italic;
+     }
+</style>
+
+reletive element
+
+<div class="one">
+    one
+</div>
+
+<div class="two">
+    two
+</div>
+<div class="three">
+    three
+</div>
+
+<style>
+    div { width : 100px; height: 100px; position: relative;}
+    .one {background-color: red; left: 10px; top:10px;}
+    .two{ background-color: blue; left:50px; top:50px;}
+    .three { background-color: green;left:100px; top:100px;}
+</style>
+
+static position
+
+<p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus vero eaque officia ab. Architecto ex id, veritatis consectetur numquam doloribus impedit enim alias sint dolore, eaque, aliquam quam. Asperiores?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur non voluptatibus, veritatis suscipit omnis nam dolorem assumenda. Natus quasi recusandae rem labore quisquam quos praesentium consectetur reiciendis facilis! Error, exercitationem.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi asperiores veritatis ipsa consectetur perferendis eos consequatur reiciendis? Voluptas in aut, facere eaque quod quam necessitatibus modi expedita sapiente minus?</p>
+
+
+<style>
+    p{ background-color: lightblue; font-style: italic;}
+    .one {left: 50px;}
+</style>
+
+z-index
+
+<div class="one">
+    one
+</div>
+
+<div class="two">
+    two
+</div>
+<div class="three">
+    three
+</div>
+
+<style>
+    div { width : 100px; height: 100px; position: absolute;}
+    .one {background-color: red; left: 10px; top:10px;z-index: 2;}
+    .two{ background-color: blue; left:50px; top:50px; z-index: 1;}
+    .three { background-color: green;left:100px; top:100px; z-index: 0;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

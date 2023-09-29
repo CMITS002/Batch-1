@@ -1,0 +1,12 @@
+<input type="text" placeholder="enter urname"/>    
+<h1></h1>
+<button onclick="get_()"> Get value from input and keep in h1 </button>
+
+
+<script>
+  function get_()
+  {
+    document.getElementsByTagName('h1')[0].innerHTML=document.getElementsByTagName('input')[0].value
+    document.getElementsByTagName('input')[0].value=''
+  }
+</script>

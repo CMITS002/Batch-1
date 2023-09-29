@@ -1,0 +1,14 @@
+<input type="text" onkeyup="get_()" onblur="remove_()" placeholder="enter urname"/>    
+<h1></h1>
+
+
+<script>
+  function get_()
+  {
+    document.getElementsByTagName('h1')[0].innerHTML=document.getElementsByTagName('input')[0].value
+  }
+  function remove_()
+  {
+    document.getElementsByTagName('input')[0].value=''
+  }
+</script>

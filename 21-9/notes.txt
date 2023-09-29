@@ -1,0 +1,422 @@
+fullstack web development 
+===============================
+1. front end 
+=========================
+ html 
+ css 
+ javascript 
+ jQuery 
+ bootstrap 
+ 
+ React / Angular / Vue JS 
+
+2. back end 
+================================
+PHP + mysql / mongodb 
+java + oracle 
+Dotnet + Sql server 
+Python Django /Flask + mongodb /mysql 
+Node JS + mongodb 
+Ruby + mysql 
+
+editors
+==============
+notepad 
+notepad++
+vscode (visual studio code)--> trending
+visual studio
+eclipse 
+atom 
+sublimetext 
+brackets 
+............. free and open soure 
+
+install vs code 
+=====================
+1. open browser -> search for vscode 
+
+</br>
+======= break the line 
+
+html tag : root level tag for create a page 
+head tag : head section for html page 
+body tag : body section for html page 
+
+kind of tags 
+=============
+1.paired tags 
+==============
+<open tag>    </close tag>
+
+
+2.unpaired tags
+======================
+1. only open <open tag>
+2. only close </close tag>
+3. self close <self close/> 
+
+headings 
+================
+h1...h6 
+h1 is bigger 
+h6 is smaller 
+
+paragraph 
+============ p tag  to show plain text 
+
+text formating tags 
+============================
+b tag : bold text 
+u tag : underline 
+i tag : italic 
+sub tag : subscription 
+sup tag : super scription 
+em tag : emphesised text 
+del tag : deleted text 
+pre tag : preface format 
+
+hyperlinks 
+============ hyperlinks creates with a tag or anchor 
+tag.
+
+<a href='' >  link name </a> 
+hyperlinks by default blue and underline style .
+hyperlinks referes to another web page of file.
+href is a mandatory attribute for a tag.
+
+note : when we want to open webpage in another 
+tab we have to add attriute called 
+target ='_blank'
+
+list items 
+==============
+1.ordered list 
+   <ol>   <li>  </li>  <li>  </li>    </ol>
+2.un ordered list 
+   <ul>   <li>  </li>  <li>  </li>    </ul>
+3.definition list 
+
+   <dl>  
+          <dt>   </dt> 
+          <dd>   </dd> 
+   </dl>
+images 
+============
+<img src ='' /> 
+img tag is inline tag 
+
+loading images 
+================
+loading from same folder 
+loading from images folder 
+htmls and images are in diff diff folders 
+loading from url 
+
+
+iframes 
+============
+ innerframes 
+
+<iframe src=''> 
+
+</iframe>
+
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illum veritatis explicabo pariatur, ea non possimus obcaecati dolorem expedita quaerat dolore laboriosam excepturi molestiae eveniet quo aut optio vitae quisquam?
+</p>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illum veritatis explicabo pariatur, ea non possimus obcaecati dolorem expedita quaerat dolore laboriosam excepturi molestiae eveniet quo aut optio vitae quisquam?
+</p>
+
+<div>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illum veritatis explicabo pariatur, ea non possimus obcaecati dolorem expedita quaerat dolore laboriosam excepturi molestiae eveniet quo aut optio vitae quisquam?
+</p>
+</div>
+
+<style>
+    div { background-color: brown; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    p { font-family:initial;
+        /* font-size: 50; */
+        /* font-weight: none; */
+        /* font-style: italic; */
+        /* none , italic , oblique,initial ,inherit  */
+        /* initial : browser default style 
+        inherit : inheriting from super element  */
+    }
+</style>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et distinctio explicabo optio nesciunt, alias voluptatum modi incidunt sequi non debitis deleniti quo. Architecto sequi dolorum, alias magnam nam dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores esse, dignissimos nesciunt, fugiat at earum exercitationem odit perspiciatis maiores iste iure ad quidem numquam nobis illo. Temporibus obcaecati ab odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quam mollitia architecto error beatae quod consequuntur vero quisquam ipsam magnam molestiae vitae, repudiandae provident animi asperiores omnis fugit illum? Illum?</p>
+
+
+<style>
+    p { 
+
+        text-align: justify;
+        /* left : defualt 
+        right 
+        center 
+        justify 
+        initial
+        inherit */
+
+        /* text-decoration: line-through; */
+        /* underline 
+        overline 
+        line-through 
+        initial 
+        inherit  */
+
+        text-transform: capitalize;
+        /* uppercase
+        lowercase 
+        captilize 
+        initial 
+        inherit  */
+
+        text-indent: 20px;
+
+        /* line-height: 50px; */
+       /* word-spacing: 50px; */
+
+
+    }
+</style>
+
+
+<p class="red" id="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis molestiae iste fugit rem, eum quasi repellat eaque. Nulla ullam, temporibus eaque officia tempore ut odit nisi ad, corporis consequatur obcaecati?</p>
+
+
+<style>
+p { color: blue;}
+.red { color:green}
+#red { color: orange;}
+
+</style>
+
+
+
+<center>
+<h2> sign up form </h2>
+
+<form>
+    <fieldset>
+        <legend> user name details </legend>
+        <input type="text" placeholder="enter first name" required/></br>
+        <input type="text" placeholder="enter last name" required/></br>
+        <input type="text" placeholder="enter user name" required/></br>
+        <input type="text" placeholder="re enter user name" required/></br>
+        <input type="password" placeholder="enter ur password" required/> </br>
+        <input type="password" placeholder="re enter password" required/> 
+    </fieldset>
+
+    <fieldset>
+        <legend>contact details</legend>
+        <input type="email" placeholder="enter ur email id" required/>
+        <input type="tel" placeholder=" enter ur phone number" required/>
+    </fieldset>
+    <fieldset>
+        <legend>select gender</legend>
+        Male : <input type="radio" name="gender" value="male"/>
+        FeMale : <input type="radio" name="gender" value="female"/>
+        others : <input type="radio" name="gender" value="others"/>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            select ur course
+        </legend>
+
+        Data Science : <input type="checkbox" value="ds"/>
+        IoT : <input type="checkbox" value="iot"/>
+        Block Chain : <input type="checkbox" value="bc"/>
+        AI  : <input type="checkbox" value="ai"/>
+        Full Stack : <input type="checkbox" value="fs"/>
+
+    </fieldset>
+    <fieldset>
+        <legend>
+            sign up here
+        </legend>
+        <input type="submit" value="sign up here"/>
+        <input type="reset" value="reset"/>
+        <input type="file" value="select"/> 
+    </fieldset>
+</form>
+</center>
+
+
+<center>
+<input type="text" placeholder="enter ur name" required /></br>
+
+<input type="password" placeholder="enter ur password" required /></br>
+</br>
+
+<input type="submit" value="sign in" />
+</center>
+
+
+<h1>web development</h1>
+<h2> fullstack </h2>
+<h3>block chain</h3>
+
+<!-- internal css -->
+<style>
+h1,h2,h3{color:red;}
+</style>
+
+
+  <!-- element specific css  -->
+
+  <h1 style="color: rgb(138, 34, 34);"> web development </h1>
+
+  <h2 style="color: green;"> full stack </h2>
+
+  <h3 style="color: blue;"> artificial intelligence</h3>
+
+
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident in, earum cumque quis consequatur veritatis? Animi quo, assumenda possimus, in fugit vero eaque, inventore minus velit quis voluptatum perspiciatis at!</p>
+
+<style>
+    p { color: #ffffff; background-color: rgb(255,100, 0);  }
+</style>
+
+
+
+<h1>web development</h1>
+<h2> fullstack </h2>
+<h3>block chain</h3>
+
+<link rel="stylesheet" href="file.css"/>
+
+
+
+h1,h2,h3{
+    color:red;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+
+selectors 
+==============
+element selector 
+class selector 
+id selector 
+group selector 
+attribute selector 
+universal selector 
+adg  one sibling selector 
+adj all sibling selector 
+parent selector 
+even selector 
+odd selector 
+nth child selector 
+
+
+positions 
+============
+static 
+========
+by default every element in static position
+element is not movable 
+top,right,bottom and left properties will not work
+
+absolute
+============
+element is movable 
+top,right,left,bottom properties will work 
+element is taking position from body edges.
+element movement possible only from corners.
+top-left,top-right ,bottom-left,bottom-right
+ 
+relative
+=============
+element is movable 
+top,right,left,bottom properties will work 
+element is taking position from relqative element
+element movement possible only from corners.
+top-left,top-right ,bottom-left,bottom-right
+
+
+fixed 
+=========
+element is movable 
+we make fix element from body scroll.
+
+z-index
+==========
+value can be a number 
+0,1,2
+10,20,30 
+100,200,300
+
+higher number on top 
+lower number in down 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

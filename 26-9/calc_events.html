@@ -1,0 +1,29 @@
+<center>
+    <h1> simple caculator </h1>
+<form style=" width: 50%; padding: 10px; border-radius: 10px; background-color: lightgray;">
+<input type="text" placeholder="enter ur first number"/>
+</br>
+<input type="text" placeholder="enter ur second number"/>
+</br>
+<span id="add" >+</span>
+<span id="add" >-</span>
+<span id="add" >*</span>
+<span id="add" >/</span>
+</form>
+</center>
+
+<style>
+    input { margin: 7px;}
+    span {background-color: rgb(43, 76, 226); padding:5px 10px; margin: 5px; color: white;}
+</style>
+
+<script>
+    document.getElementById('add').addEventListener('click',add)
+    function add()
+    {
+        var f_num=document.getElementsByTagName('input')[0].value
+        var s_num=document.getElementsByTagName('input')[1].value
+        var add_value =parseInt(f_num)+parseInt(s_num)
+        alert('addition value is..' + add_value)
+    }
+</script>
