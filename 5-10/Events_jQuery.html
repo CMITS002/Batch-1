@@ -1,0 +1,40 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id eaque dolorem accusamus libero ea corrupti placeat cum ipsam repellendus! Enim quae id excepturi animi vitae voluptatum molestias inventore perspiciatis.</h1>
+
+<button id="one">Single click on me </button>
+<button id="two"> double click on me </button>
+<script>
+    // mouseover 
+    $('h1').mouseover(fun1)
+    function fun1()
+    {
+        $('h1').css('color','blue')
+    }
+   //mouse out 
+    $('h1').mouseout(fun2)
+    function fun2()
+    {
+        $('h1').css('color','')
+    }
+    //single click 
+    $('#one').click(fun3)
+    function fun3()
+    {
+        alert('clicked on me ')
+    }
+
+    //double click 
+    $('#two').dblclick(fun4)
+    function fun4()
+    {
+        alert(' you double clicked on me ')
+    }
+
+
+
+
+
+
+
+</script>

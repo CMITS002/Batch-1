@@ -1,0 +1,27 @@
+<img src="" id="prd_image"/> 
+<h2 id="prd_name"> </h2>
+
+<script>
+    //1.JSON data 
+    var JSONObj = '[{\"id\":1,\"image\":\"https://kickstart.bikeexif.com/wp-content/uploads/2020/01/royal-enfield-electra-350-custom-3-1200x801.jpg\",\"name\":\"OrientVitaPro28\\\"\",\"price\":\"284.00\",\"inventory\":4,\"productCode\":\"K203\"},{\"id\":2,\"image\":\"https://th.bing.com/th/id/R.717c043dce1a91ab601eeead7640c419?rik=oEdsnZqqKWp6cg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-ysFcBeVi9Ak%2fTjGUqlbMlVI%2fAAAAAAAAFKY%2fN4BgH5PAE7g%2fs1600%2fgodspeedtheplow_bsa-bobber.jpg&ehk=Hk4vtqM4D6jn8C8v4S%2beewG2dsnV5cNzoZZBrdv0RsI%3d&risl=&pid=ImgRaw&r=0\",\"name\":\"OrientS-40026\\\"\",\"price\":\"198.00\",\"inventory\":14,\"productCode\":\"K433\"},{\"id\":3,\"image\":\"https://www.drivespark.com/img/2019/12/royal-enfield-xiav-350-by-guns-and-hoses-1-1575355368.jpg\",\"name\":\"BulletBora20\\\"\",\"price\":\"350.00\",\"inventory\":7,\"productCode\":\"K012\"},{\"id\":4,\"image\":\"https://th.bing.com/th/id/R.e993b8bfe79449d2c849ab575d2d10d1?rik=cxlijSqHWuJ3PQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-5LhOBYdxILE%2fWNK7N8UlEWI%2fAAAAAAAAFz8%2fRcDP5ELzhxAJYs97yg2UpU4cI0IXVP9PwCK4B%2fs1600%2fcamouflage_paint_Royal_Enfield_Classic_350c_Haldankar-Custom-1024x734.jpg&ehk=MIKRufmZ4M9Xr6lNZcR3tlY%2fJLq3EEIOmfBcHDM5%2bZ0%3d&risl=&pid=ImgRaw&r=0\",\"name\":\"Federhandmade\",\"price\":\"790.00\",\"inventory\":5,\"productCode\":\"G0127\"},{\"id\":5,\"image\":\"https://news.maxabout.com/wp-content/uploads/2017/05/Matte-Yellow-Royal-Enfield-Classic-250-ParPins-Garage-7-768x473.jpg\",\"name\":\"IbanezG120\",\"price\":\"430.00\",\"inventory\":2,\"productCode\":\"G1233\"},{\"id\":6,\"image\":\"https://www.bikes4sale.in/pictures/default/royal-enfield-classic-350-dual-channel-bs6/royal-enfield-classic-350-dual-channel-bs6-pic-5.jpg\",\"name\":\"FederBluesedition\",\"price\":\"650.00\",\"inventory\":6,\"productCode\":\"G4478\"}] '
+    console.log(JSONObj)
+
+    //2 convert JSON to Javascript 
+
+    var JSObj=JSON.parse(JSONObj)
+    console.log(JSObj)
+    console.log(JSObj[0])
+document.getElementById('prd_image').setAttribute('src',JSObj[0].image)
+document.getElementById('prd_name').innerHTML=JSObj[0].name
+
+
+    // ittertate JSArray find out every object 
+
+    // for(Prd in JSObj)
+    // {
+
+    // }
+</script>
+<style>
+    img { width:50%; height: auto;}
+</style>

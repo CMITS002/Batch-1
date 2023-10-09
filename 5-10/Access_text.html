@@ -1,0 +1,33 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+
+<input type="text" placeholder="enter ur name"/>
+
+<h2> </h2>
+
+<script>
+    //keyup
+    $('input').keyup(fun1)
+    function fun1()
+    
+    {
+        $('h2').html($('input').val())
+    }
+    //focus
+    $('input').focus(fun2)
+    function fun2()
+    {
+        $('input').css('background-color','lightgray')
+    }
+    //blur
+    $('input').blur(fun3)
+    function fun3()
+    {
+        $('input').css('background-color','')
+    }
+
+    
+
+   
+
+
+</script>

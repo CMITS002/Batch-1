@@ -1,0 +1,25 @@
+<script>
+    var JSONObject= '{\"perminent_emps\":[{\"name\":\"hari\",\"salary\":56000},{\"name\":\"chy\",\"salary\":50000},{\"name\":\"krishna\",\"salary\":60000}],\"contract_emps\":[{\"name\":\"gayatri\",\"salary\":66000},{\"name\":\"prathusha\",\"salary\":76000}],\"self_employees\":[{\"name\":\"bhavya\",\"salary\":96000,\"technologies\":[\"web\",\"mobile\"]},{\"name\":\"sainath\",\"salary\":88000,\"technologies\":[\"web\",\"mobile\",\"AI\"]},{\"name\":\"geetha\",\"salary\":123000,\"technologies\":[\"web\"]},{\"name\":\"sagar\",\"salary\":126000,\"technologies\":[\"mobile\"]}]}'
+    var JSObject=JSON.parse(JSONObject)
+    console.log(JSObject)
+
+   // document.write(JSObject.self_employees)
+   // alert(JSObject.self_employees.length)
+
+    for(s_emp in JSObject.self_employee
+    s)
+    {
+        document.write("Self Employee Name..",JSObject.self_employees[s_emp].name)
+        document.write('</br>')
+        document.write("Self employee Salary ..",JSObject.self_employees[s_emp].salary)
+        document.write('</br>')
+        document.write('</br>')
+        
+        for(var i=0;i<JSObject.self_employees[s_emp].technologies.length;i++)
+        {
+            document.write(JSObject.self_employees[s_emp].technologies[i])
+        }
+
+    }
+
+</script>

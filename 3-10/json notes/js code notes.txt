@@ -1,0 +1,51 @@
+<script>
+    var jsonObj= '{"prd_name":"iPhone","prd_price":45000} '
+    console.log(jsonObj)
+
+    var JSObj=JSON.parse(jsonObj)
+    console.log(JSObj)
+
+
+    document.write('prd_name is...',JSObj.prd_name)
+    document.write('</br>')
+    document.write('prd_price is...',JSObj.prd_price)
+    document.write('</br>')
+
+    document.write('<hr>')
+
+    var JSONArray ='[{"prd_name":"iPhone","prd_price":45000},{"prd_name":"iPad","prd_price":55000},{"prd_name":"Nexus","prd_price":25000},{"prd_name":"Samsung","prd_price":10000}]'
+    console.log(JSONArray)
+
+    var jsArray=JSON.parse(JSONArray)
+    console.log(jsArray)
+
+    // document.write('prd_name is...',jsArray[0].prd_name)
+    // document.write('</br>')
+    // document.write('prd_price is...',jsArray[0].prd_price)
+    // document.write('</br>')
+
+    // document.write('prd_name is...',jsArray[1].prd_name)
+    // document.write('</br>')
+    // document.write('prd_price is...',jsArray[1].prd_price)
+    // document.write('</br>')
+
+    // for(prd in jsArray)
+    // {
+    //  document.write('<h2>prd_name is....'  + jsArray[prd].prd_name + '</h2>')
+    //  document.write('<h3>prd_price is...' +jsArray[prd].prd_price + '</h3>')
+    // }
+
+    for(var i=0;i<jsArray.length;i++)
+    {
+     document.write('<h2>prd_name is....'  + jsArray[i].prd_name + '</h2>')
+     document.write('<h3>prd_price is...' +jsArray[i].prd_price + '</h3>')
+    }
+
+
+</script>
+
+<style>
+    h2 { background-color: orange; color: green;}
+    h3 {background-color: green; color: orange; }
+    h2,h3 { text-align: center; font-style: italic;}
+</style>

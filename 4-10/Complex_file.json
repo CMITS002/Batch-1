@@ -1,0 +1,18 @@
+
+{
+    "perminent_emps":[
+        {"name":"hari","salary":56000},
+        {"name":"chy","salary":50000},
+        {"name":"krishna","salary":60000}
+    ],
+    "contract_emps":[
+        {"name":"gayatri","salary":66000},
+        {"name":"prathusha","salary":76000}
+    ],
+    "self_employees":[
+        {"name":"bhavya","salary":96000,"technologies":["web","mobile"]},
+        {"name":"sainath","salary":88000,"technologies":["web","mobile","AI"]},
+        {"name":"geetha","salary":123000,"technologies":["web"]},
+        {"name":"sagar","salary":126000,"technologies":["mobile"]}
+    ]
+}

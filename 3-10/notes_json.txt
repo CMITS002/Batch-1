@@ -1,0 +1,154 @@
+JS 
+====
+variables 
+alert()
+prompt()
+console.log()
+document.write()
+access elements 
+access classes 
+access id 
+attribute manipulation 
+events 
+functions 
+conditions 
+loops 
+
+json 
+======
+json is javascript object notation.
+json is not programming lang 
+json is simple text format.
+json is used for store and transfter data between client and server 
+json is a mediator 
+json is lang independent 
+json is lightweight text data interchangable format.
+json strings always needed double quotes .  "  "  
+json have in two diff formats 
+ 1.json object 
+ 2.json array 
+json datatypes : numer,string,object,array,null,boolean,undefined .
+
+json object rules
+==============
+1.json object is collection of key:value pairs 
+2.json object starts with { closed with } 
+3.json key must be string with double quotes "  "
+4.json value can be any datatype (number,string,object,array,null,true,false)
+5.key and value seperated with : 
+6.key value paire seperated with comma.
+7.last k:v pair do not give comma.
+
+json object 
+===========
+{
+   "person_name"  : " chy ",
+   "person_qual"   : " btech ",
+   "person_salary" : 45000 
+}
+
+validate json with json validator online . (https://jsonlint.com/)
+
+json array
+==========
+json array is collection of values 
+json array start with [ ends with ] 
+json array values are seperated with comma 
+value can be any datatype (number,string,object,array,boolean,null)
+
+json array example 
+===============
+[
+{
+    "person_name": " chy ",
+    "person_qual": " btech ",
+    "person_salary": 45000
+},
+{
+    "person_name": " bhavya",
+    "person_qual": " MBA",
+    "person_salary": 55000
+},
+{
+    "person_name": " prathyusha",
+    "person_qual": " MCA",
+    "person_salary": 60000
+}
+]
+  
+college json 
+family json 
+classroom json 
+liked gadjects json 
+
+js-> json 
+========  
+JSON.stringify() : this is a js predefined method which is using for convert    
+jsObj -> JSONObj
+jsArray -> JSON Array 
+
+json-> js 
+=================
+JSON.parse() : this is a js predefined method which is using for convert 
+JSONObj -> jsObj 
+JSONArray ->jsArray 
+
+use case-1 
+------------------------------------------------------
+flowers JSON 
+===========
+flowersArrayJSON ->  [ { flower oject}  ] 
+flowerObj 
+{
+   f_name : ' ', f_img_url:' '
+}
+
+usecase -2 
+----------------------------------------------------
+prepare complex json 
+
+shop 
+      electorincs 
+            TV 
+            mobiles 
+      fashion 
+          men 
+          women
+          children 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+

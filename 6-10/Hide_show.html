@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#one").click(function(){
+    $("p").hide(5000)
+  });
+  $("#two").click(function(){
+    $("p").show(5000)
+  });
+});
+</script> 
+</head>
+<body>
+
+<button id="one">Hide</button>
+<button id="two">Show</button>
+
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+
+</body>
+</html>

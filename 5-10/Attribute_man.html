@@ -1,0 +1,56 @@
+<!-- <html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+    </head>
+
+    <body>
+        <button id="add" onclick="fun1()">Add Class</button>
+        <button id="remove" onclick="fun2()">Remove class</button>
+<h1 id="srini"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ut odio molestiae minima magnam doloribus ullam repellendus facere magni, debitis accusamus! Dolorem excepturi consectetur atque, maxime facilis sint id magnam.</h1>
+        <script>
+            function fun1()
+            {
+                document.getElementById('srini').setAttribute('class','apple')
+            }
+            function fun2()
+            {
+                document.getElementById('srini').removeAttribute('class')
+            }
+
+        </script>
+     <style>
+        .apple { text-align: center; font-style: italic; color: blue;}
+     </style>
+    </body>
+</html> -->
+
+<html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+    </head>
+
+    <body>
+        <button id="add">Add class</button>
+        <button id="remove">remove class</button>
+        
+        <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores aliquid fuga ut qui placeat nemo! Provident eum quibusdam amet! Exercitationem officiis ratione ipsa? Inventore, recusandae. Earum aut minima voluptate.</h1>
+        <script>
+           // document.getElementsByTagName('button')[0].innerHTML="srini"
+           $('#add').click(fun1)
+           function fun1()
+           {
+            $('h1').attr('class','apple')
+           }
+           $('#remove').click(fun2)
+           function fun2()
+           {
+            $('h1').removeAttr('class')
+           }
+
+        </script>
+        <style>
+            .apple { text-align: center; font-style: italic; color: blue;}
+        </style>
+
+    </body>
+</html>

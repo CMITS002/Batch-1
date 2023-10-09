@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#one").click(function(){
+    $("p").slideUp(5000)
+  });
+  $("#two").click(function(){
+    $("p").slideDown(5000)
+  });
+  $("#three").click(function(){
+    $("p").slideToggle(5000)
+  });
+
+});
+</script> 
+</head>
+<body>
+
+<button id="one">slide up</button>
+<button id="two">slide down</button>
+<button id="three">slide Toogle</button>
+
+
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dicta ipsa ab repellat eum velit optio eligendi nihil consequatur minima esse omnis, assumenda minus excepturi sint qui consequuntur, ex vel? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iste, modi, vel libero fuga qui ullam aperiam eveniet deleniti, iusto totam voluptate omnis consequatur inventore minima illo expedita eligendi labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eveniet commodi corrupti quae earum, labore doloremque! Nulla consequatur architecto dolor tempora neque quasi magni tempore qui iusto. Repellat, obcaecati. Adipisci!</p>
+
+
+</body>
+</html>

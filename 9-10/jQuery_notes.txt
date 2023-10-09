@@ -1,0 +1,456 @@
+jQuery
+=======
+jQuery is simplified javascript.
+jQuery is lightweight version of javascript.
+jQuery is open source javascript library.
+jQuery provides animations.
+jQuery have lot of implementaion plugins.
+
+how to add jQuery for ur html 
+========================
+1, download and use (local file) offline use 
+2. work with CDN (Content Delivery Network) (Microsoft,Amazon........) 24/7 working online
+
+file types 
+========
+1.minified version  (less in size and faster) (no spaces no new lines not readable)(85.4 KB (87,533 bytes))
+2.development version (bigger in size slower)(spaces newlines and readable)  (289 KB (296,028 bytes))
+
+recommend in real time --> CDN and minified 
+
+www.jQuery.com
+definition 
+==========
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things like
+ HTML document traversal and manipulation, event handling, animation, and Ajax much simpler
+ with an easy-to-use API that works across a multitude of browsers. With a combination of
+ versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+
+jQuery is $
+
+programs
+===============
+access element_id_class
+<html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+    </head>
+
+    <body>
+        <button>Click Me </button>
+        <button class="srini"> Class Button</button>
+        <button id="sameera" class="srini"> id button </button>
+        <script>
+      
+          
+           //access element by id name 
+           $('#sameera').html('JAVA FULLSTACK')
+
+            // access element by class name 
+            $('.srini').html('fullstack')
+
+            //access element by tag name 
+           $('button').html('srini')
+
+
+
+        </script>
+
+    </body>
+</html>
+----------------------------------------------------------------------------------------------
+access_text
+==================
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+
+<input type="text" placeholder="enter ur name"/>
+
+<h2> </h2>
+
+<script>
+    //keyup
+    $('input').keyup(fun1)
+    function fun1()
+    
+    {
+        $('h2').html($('input').val())
+    }
+    //focus
+    $('input').focus(fun2)
+    function fun2()
+    {
+        $('input').css('background-color','lightgray')
+    }
+    //blur
+    $('input').blur(fun3)
+    function fun3()
+    {
+        $('input').css('background-color','')
+    }
+</script>
+--------------------------------------------------------------------
+attribute_man.html
+=================================
+<!-- <html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+    </head>
+
+    <body>
+        <button id="add" onclick="fun1()">Add Class</button>
+        <button id="remove" onclick="fun2()">Remove class</button>
+<h1 id="srini"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ut odio molestiae minima magnam doloribus ullam repellendus facere magni, debitis accusamus! Dolorem excepturi consectetur atque, maxime facilis sint id magnam.</h1>
+        <script>
+            function fun1()
+            {
+                document.getElementById('srini').setAttribute('class','apple')
+            }
+            function fun2()
+            {
+                document.getElementById('srini').removeAttribute('class')
+            }
+
+        </script>
+     <style>
+        .apple { text-align: center; font-style: italic; color: blue;}
+     </style>
+    </body>
+</html> -->
+
+<html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+    </head>
+
+    <body>
+        <button id="add">Add class</button>
+        <button id="remove">remove class</button>
+        
+        <h1> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores aliquid fuga ut qui placeat nemo! Provident eum quibusdam amet! Exercitationem officiis ratione ipsa? Inventore, recusandae. Earum aut minima voluptate.</h1>
+        <script>
+           // document.getElementsByTagName('button')[0].innerHTML="srini"
+           $('#add').click(fun1)
+           function fun1()
+           {
+            $('h1').attr('class','apple')
+           }
+           $('#remove').click(fun2)
+           function fun2()
+           {
+            $('h1').removeAttr('class')
+           }
+
+        </script>
+        <style>
+            .apple { text-align: center; font-style: italic; color: blue;}
+        </style>
+
+    </body>
+</html>
+
+
+
+css manipulation.html
+==================================
+<html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+    </head>
+
+    <body>
+        <h1> web development </h1>
+        <script>
+            // $('h1').css('color','blue')
+            // $('h1').css ({'color':'blue'})
+
+            //  document.getElementsByTagName('h1')[0].style.color='red'
+            //  document.getElementsByTagName('h1')[0].style.textAlign='center'
+            //  document.getElementsByTagName('h1')[0].style.fontStyle='italic'
+         $('h1').css({'color':'blue', 'text-align':'center','font-style':'italic','background-color':'yellow'})
+
+
+        </script>
+
+    </body>
+</html>
+
+
+
+events_jQuery
+============================
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id eaque dolorem accusamus libero ea corrupti placeat cum ipsam repellendus! Enim quae id excepturi animi vitae voluptatum molestias inventore perspiciatis.</h1>
+
+<button id="one">Single click on me </button>
+<button id="two"> double click on me </button>
+<script>
+    // mouseover 
+    $('h1').mouseover(fun1)
+    function fun1()
+    {
+        $('h1').css('color','blue')
+    }
+   //mouse out 
+    $('h1').mouseout(fun2)
+    function fun2()
+    {
+        $('h1').css('color','')
+    }
+    //single click 
+    $('#one').click(fun3)
+    function fun3()
+    {
+        alert('clicked on me ')
+    }
+
+    //double click 
+    $('#two').dblclick(fun4)
+    function fun4()
+    {
+        alert(' you double clicked on me ')
+    }
+</script>
+
+
+
+
+
+j-query.cdn-dev
+========================================
+<html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js" > </script>
+    </head>
+
+    <body>
+        <button>Click Me </button>
+        <script>
+           // document.getElementsByTagName('button')[0].innerHTML="srini"
+           $('button').html('srini')
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
+
+j-Query-cdn-min
+=======================================
+<html>
+    <head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" > </script>
+    </head>
+
+    <body>
+        <button>Click Me </button>
+        <script>
+           // document.getElementsByTagName('button')[0].innerHTML="srini"
+           $('button').html('srini')
+        </script>
+
+    </body>
+</html>
+
+
+
+
+j-Query-use-local-dev
+=======================
+<html>
+    <head>
+        <script src="jQuery_Local_dev.js"> </script>
+    </head>
+
+    <body>
+        <button>Click Me </button>
+        <script>
+           // document.getElementsByTagName('button')[0].innerHTML="srini"
+           $('button').html('srini')
+        </script>
+
+    </body>
+</html>
+
+
+
+j-Query-local-use-min
+========================
+<html>
+    <head>
+        <script src="jQuery_Production_min.js"> </script>
+    </head>
+
+    <body>
+        <button>Click Me </button>
+        <script>
+           // document.getElementsByTagName('button')[0].innerHTML="srini"
+           $('button').html('srini')
+        </script>
+
+    </body>
+</html>
+
+jQuery Animations 
+=====================
+fade in 
+fade out 
+slide 
+dismiss 
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px',top:'250px'});
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'}).animate({top:'250px'}).animate({left:'0px'}).animate({top:'0px'}).animate({'font-size':'40px',width:'400px',height:'400px'}).delay(2000).hide(5000).show(1000).animate({bottom:'0px',right:'0px',width:'100px',height:'100px'});
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"> Hello </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#one").click(function(){
+    $("p").hide(5000)
+  });
+  $("#two").click(function(){
+    $("p").show(5000)
+  });
+});
+</script> 
+</head>
+<body>
+
+<button id="one">Hide</button>
+<button id="two">Show</button>
+
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#one").click(function(){
+    $("p").slideUp(5000)
+  });
+  $("#two").click(function(){
+    $("p").slideDown(5000)
+  });
+  $("#three").click(function(){
+    $("p").slideToggle(5000)
+  });
+
+});
+</script> 
+</head>
+<body>
+
+<button id="one">slide up</button>
+<button id="two">slide down</button>
+<button id="three">slide Toogle</button>
+
+
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dicta ipsa ab repellat eum velit optio eligendi nihil consequatur minima esse omnis, assumenda minus excepturi sint qui consequuntur, ex vel? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit iste, modi, vel libero fuga qui ullam aperiam eveniet deleniti, iusto totam voluptate omnis consequatur inventore minima illo expedita eligendi labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eveniet commodi corrupti quae earum, labore doloremque! Nulla consequatur architecto dolor tempora neque quasi magni tempore qui iusto. Repellat, obcaecati. Adipisci!</p>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
